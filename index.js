@@ -5,5 +5,6 @@
  */
 import wx, { PropTypes } from 'labrador';
 import Component from './component';
+
 export default wx;
 export { PropTypes, Component };

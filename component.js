@@ -3,39 +3,28 @@
  * @date 2016-11-18
  * @author Li <li@maichong.it>
  */
+
 import { Component } from 'labrador';
 import immutable from 'seamless-immutable';
+
+wx.immutable = immutable;
+
+const emptyObject = immutable({});
+
 export default class ImmutableComponent extends Component {
-  _ImmutableComponent_props = immutable({});
-  _ImmutableComponent_state = immutable({});
-
-  constructor(props) {
-    super(props);
-    this._ImmutableComponent_props = immutable(props);
-  }
-
   get state() {
-    console.log('return state');
-    return this._ImmutableComponent_state;
+    return this._immutable_state || emptyObject;
   }
 
-  set state(value) {
-    console.log('value:',value);
-    this._ImmutableComponent_state = immutable(value);
+  set state(nextState) {
+    this._immutable_state = immutable(nextState);
   }
-
 
   get props() {
-    return this._ImmutableComponent_props;
+    return this._immutable_props || emptyObject;
   }
 
-  set props(value) {
-    this._ImmutableComponent_props = immutable(value);
-  }
-
-  onUnLoad() {
-    super.onUnLoad();
-    this._ImmutableComponent_props = null;
-    this._ImmutableComponent_props = null;
+  set props(nextProps) {
+    this._immutable_props = immutable(nextProps);
   }
 }

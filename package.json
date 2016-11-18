@@ -1,6 +1,8 @@
 {
   "name": "labrador-immutable",
-  "version": "1.0.0",
+  "version": "0.6.0",
+  "description": "Labrador Immutable Component"
+  "keywords": ["labrador", "immutable", "weixin", "wxa", "wxapp", "wechat"],
   "main": "index.js",
   "scripts": {},
   "author": {
@@ -8,11 +10,9 @@
     "name": "li",
     "url": "https://github.com/maichonglyd"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "labrador": "^0.5.6",
+    "labrador": "^0.6.0",
     "seamless-immutable": "^6.3.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
