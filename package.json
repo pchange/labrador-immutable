@@ -1,7 +1,7 @@
 {
   "name": "labrador-immutable",
   "version": "0.6.0",
-  "description": "Labrador Immutable Component"
+  "description": "Labrador Immutable Component",
   "keywords": ["labrador", "immutable", "weixin", "wxa", "wxapp", "wechat"],
   "main": "index.js",
   "scripts": {},
