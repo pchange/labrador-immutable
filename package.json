@@ -5,6 +5,10 @@
   "keywords": ["labrador", "immutable", "weixin", "wxa", "wxapp", "wechat"],
   "main": "index.js",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/labrador.git"
+  },
   "author": {
     "email": "li@maichong.it",
     "name": "li",
