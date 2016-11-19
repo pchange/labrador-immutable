@@ -7,7 +7,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maichong/labrador.git"
+    "url": "git+https://github.com/maichong/labrador-immutable.git"
   },
   "author": {
     "email": "li@maichong.it",
