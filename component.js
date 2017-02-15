@@ -17,7 +17,7 @@ export default class ImmutableComponent extends Component {
   }
 
   set state(nextState) {
-    this._immutable_state = immutable(nextState);
+    this._immutable_state = nextState;
   }
 
   get props() {
@@ -25,6 +25,6 @@ export default class ImmutableComponent extends Component {
   }
 
   set props(nextProps) {
-    this._immutable_props = immutable(nextProps);
+    this._immutable_props = nextProps;
   }
 }
